@@ -1,3 +1,4 @@
+
 # Algo-Trader
 
 A full-stack simulated trading bot built with:
@@ -13,3 +14,6 @@ To run:
 uvicorn backend.main:app --reload
 cd dashboard && npm start
 
+=======
+# Algo-trader
+f767f5dcad44ea57fabc0cca53b2507c28101e93
