@@ -1,0 +1,451 @@
+from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
+from dotenv import load_dotenv
+import yfinance as yf
+import pandas as pd
+import threading
+import time
+from datetime import datetime
+from collections import deque
+import numpy as np
+from sklearn.cluster import DBSCAN
+from collections import Counter
+
+# Load env vars
+load_dotenv()
+
+app = FastAPI()
+
+# Allow frontend to connect
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# In-memory data
+price_history = deque(maxlen=100)
+trade_log = []
+wallet = {
+    "usd": 10000.0,
+    "btc": 0.0
+}
+bot_active = False
+
+# === Request Schema ===
+class TradeRequest(BaseModel):
+    symbol: str
+    amount: float
+
+# === API Routes ===
+@app.get("/")
+def root():
+    return {"message": "Trading bot API running with yfinance!"}
+
+@app.get("/price-history/{symbol}")
+def get_price_history_symbol(symbol: str, period: str = "1d", interval: str = "5m"):
+    """Get price history for a specific symbol with customizable period and interval"""
+    try:
+        ticker = yf.Ticker(symbol.upper())
+        history = ticker.history(period=period, interval=interval)
+        
+        if history.empty:
+            raise Exception(f"No data available for {symbol}")
+            
+        data = [
+            {
+                "time": timestamp.strftime("%m-%d %H:%M"),
+                "price": round(price, 2)
+            }
+            for timestamp, price in zip(history.index, history["Close"])
+        ]
+        return data[-100:]  # Return latest 100 points
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
+@app.get("/indicators/{symbol}")
+def get_indicators(symbol: str, period: str = "7d", interval: str = "1h"):
+    """Get technical indicators with advanced support/resistance detection"""
+    try:
+        ticker = yf.Ticker(symbol.upper())
+        history = ticker.history(period=period, interval=interval)
+        
+        if history.empty:
+            raise Exception(f"No price data available for {symbol}")
+
+        close = history['Close']
+        high = history['High']
+        low = history['Low']
+        volume = history['Volume']
+
+        # RSI Calculation
+        delta = close.diff()
+        gain = delta.where(delta > 0, 0)
+        loss = -delta.where(delta < 0, 0)
+        avg_gain = gain.rolling(window=14).mean()
+        avg_loss = loss.rolling(window=14).mean()
+        rs = avg_gain / avg_loss
+        rsi = 100 - (100 / (1 + rs))
+
+        # MACD Calculation
+        ema_12 = close.ewm(span=12, adjust=False).mean()
+        ema_26 = close.ewm(span=26, adjust=False).mean()
+        macd = ema_12 - ema_26
+        signal = macd.ewm(span=9, adjust=False).mean()
+
+        # === ENHANCED SUPPORT & RESISTANCE DETECTION ===
+        
+        # Step 1: Find all pivot points
+        pivot_highs, pivot_lows = find_pivot_points(high, low, window=3)
+        
+        # Step 2: Cluster nearby levels
+        support_levels = cluster_price_levels(pivot_lows, tolerance=0.02)  # 2% tolerance
+        resistance_levels = cluster_price_levels(pivot_highs, tolerance=0.02)
+        
+        # Step 3: Calculate strength scores
+        support_strengths = calculate_level_strength(support_levels, close, high, low)
+        resistance_strengths = calculate_level_strength(resistance_levels, close, high, low)
+        
+        # Step 4: Get current price for context
+        current_price = close.iloc[-1]
+        
+        # Step 5: Find the most relevant levels
+        nearest_support = find_nearest_level(current_price, support_levels, direction='below')
+        nearest_resistance = find_nearest_level(current_price, resistance_levels, direction='above')
+        
+        # Step 6: Get multiple levels for visualization
+        top_supports = get_top_levels(support_levels, support_strengths, current_price, direction='below', count=3)
+        top_resistances = get_top_levels(resistance_levels, resistance_strengths, current_price, direction='above', count=3)
+
+        return {
+            "symbol": symbol.upper(),
+            "rsi": round(rsi.iloc[-1] if not rsi.empty else 50, 2),
+            "macd": round(macd.iloc[-1] if not macd.empty else 0, 4),
+            "signal": round(signal.iloc[-1] if not signal.empty else 0, 4),
+            
+            # Primary levels (for your existing chart display)
+            "support": round(nearest_support['level'], 2) if nearest_support else None,
+            "resistance": round(nearest_resistance['level'], 2) if nearest_resistance else None,
+            
+            # Enhanced data (for future visualization)
+            "support_levels": [
+                {
+                    "level": round(level['level'], 2),
+                    "strength": level['strength'],
+                    "touches": level['touches'],
+                    "last_touch": level['last_touch']
+                }
+                for level in top_supports
+            ],
+            "resistance_levels": [
+                {
+                    "level": round(level['level'], 2),
+                    "strength": level['strength'],
+                    "touches": level['touches'],
+                    "last_touch": level['last_touch']
+                }
+                for level in top_resistances
+            ],
+            
+            # Analysis metadata
+            "current_price": round(current_price, 2),
+            "total_pivots_found": len(pivot_highs) + len(pivot_lows),
+            "support_quality": nearest_support.get('strength', 0) if nearest_support else 0,
+            "resistance_quality": nearest_resistance.get('strength', 0) if nearest_resistance else 0
+            
+        }
+
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f"Error calculating indicators: {str(e)}")
+
+
+# === SUPPORT/RESISTANCE HELPER FUNCTIONS ===
+
+def find_pivot_points(highs, lows, window=3):
+    """Find pivot highs and lows using local extrema detection"""
+    pivot_highs = []
+    pivot_lows = []
+    
+    for i in range(window, len(highs) - window):
+        # Check for pivot high
+        is_pivot_high = True
+        for j in range(i - window, i + window + 1):
+            if j != i and highs.iloc[j] >= highs.iloc[i]:
+                is_pivot_high = False
+                break
+        if is_pivot_high:
+            pivot_highs.append({
+                'index': i,
+                'price': highs.iloc[i],
+                'timestamp': highs.index[i]
+            })
+        
+        # Check for pivot low
+        is_pivot_low = True
+        for j in range(i - window, i + window + 1):
+            if j != i and lows.iloc[j] <= lows.iloc[i]:
+                is_pivot_low = False
+                break
+        if is_pivot_low:
+            pivot_lows.append({
+                'index': i,
+                'price': lows.iloc[i],
+                'timestamp': lows.index[i]
+            })
+    
+    return pivot_highs, pivot_lows
+
+
+def cluster_price_levels(pivot_points, tolerance=0.02):
+    """Group nearby price levels together using clustering"""
+    if not pivot_points:
+        return []
+    
+    prices = np.array([p['price'] for p in pivot_points]).reshape(-1, 1)
+    
+    # Use DBSCAN clustering to group nearby levels
+    # eps = tolerance * average price (adaptive clustering)
+    avg_price = np.mean(prices)
+    eps = tolerance * avg_price
+    
+    clustering = DBSCAN(eps=eps, min_samples=1).fit(prices)
+    
+    clustered_levels = []
+    for cluster_id in set(clustering.labels_):
+        if cluster_id == -1:  # Noise points
+            continue
+            
+        cluster_points = [pivot_points[i] for i, label in enumerate(clustering.labels_) if label == cluster_id]
+        
+        # Use the median price of the cluster as the level
+        cluster_prices = [p['price'] for p in cluster_points]
+        level_price = np.median(cluster_prices)
+        
+        clustered_levels.append({
+            'level': level_price,
+            'points': cluster_points,
+            'count': len(cluster_points)
+        })
+    
+    return clustered_levels
+
+
+def calculate_level_strength(levels, close_prices, high_prices, low_prices, proximity_threshold=0.015):
+    """Calculate strength score for each support/resistance level"""
+    enhanced_levels = []
+    
+    for level_data in levels:
+        level = level_data['level']
+        touches = 0
+        last_touch_index = -1
+        
+        # Count how many times price approached this level
+        for i, (close, high, low) in enumerate(zip(close_prices, high_prices, low_prices)):
+            # Check if any part of the candle touched the level
+            candle_range = high - low
+            level_tolerance = max(proximity_threshold * level, candle_range * 0.5)
+            
+            if abs(close - level) <= level_tolerance or abs(high - level) <= level_tolerance or abs(low - level) <= level_tolerance:
+                touches += 1
+                last_touch_index = i
+        
+        # Calculate strength score
+        base_strength = level_data['count'] * 10  # Cluster size
+        touch_strength = touches * 5  # How often it's been tested
+        
+        # Recency bonus (more recent touches are more significant)
+        recency_bonus = 0
+        if last_touch_index >= 0:
+            days_since_touch = len(close_prices) - last_touch_index
+            recency_bonus = max(0, 10 - days_since_touch)
+        
+        total_strength = base_strength + touch_strength + recency_bonus
+        
+        enhanced_levels.append({
+            'level': level,
+            'strength': total_strength,
+            'touches': touches,
+            'last_touch': last_touch_index,
+            'cluster_size': level_data['count']
+        })
+    
+    return enhanced_levels
+
+
+def find_nearest_level(current_price, levels, direction='below'):
+    """Find the nearest support (below) or resistance (above) level"""
+    if not levels:
+        return None
+    
+    valid_levels = []
+    for level in levels:
+        if direction == 'below' and level['level'] < current_price:
+            valid_levels.append(level)
+        elif direction == 'above' and level['level'] > current_price:
+            valid_levels.append(level)
+    
+    if not valid_levels:
+        return None
+    
+    # Sort by distance and return the nearest
+    valid_levels.sort(key=lambda x: abs(x['level'] - current_price))
+    return valid_levels[0]
+
+
+def get_top_levels(levels, strengths, current_price, direction='below', count=3):
+    """Get the top N strongest levels in the specified direction"""
+    if direction == 'below':
+        valid_levels = [level for level in strengths if level['level'] < current_price]
+    else:
+        valid_levels = [level for level in strengths if level['level'] > current_price]
+    
+    # Sort by strength (descending) and return top N
+    valid_levels.sort(key=lambda x: x['strength'], reverse=True)
+    return valid_levels[:count]
+@app.post("/buy")
+def buy(trade: TradeRequest):
+    return {
+        "action": "buy",
+        "symbol": trade.symbol.upper(),
+        "amount": trade.amount,
+        "status": "simulated"
+    }
+
+@app.post("/sell")
+def sell(trade: TradeRequest):
+    return {
+        "action": "sell",
+        "symbol": trade.symbol.upper(),
+        "amount": trade.amount,
+        "status": "simulated"
+    }
+
+@app.get("/balance")
+def get_balance():
+    return wallet
+
+@app.get("/status")
+def get_status():
+    return {
+        "bot": "running" if bot_active else "idle",
+        "trades": len(trade_log)
+    }
+
+@app.get("/logs")
+def get_logs():
+    return {"log": trade_log}
+
+@app.get("/price-history")
+def get_price_history():
+    """Get bot's internal price history"""
+    return list(price_history)
+
+# === Bot Strategy ===
+def strategy_loop():
+    global bot_active
+
+    print("🤖 Bot started thinking...")
+
+    while bot_active:
+        try:
+            ticker = yf.Ticker("BTC-USD")
+            history = ticker.history(period="7d", interval="1h")
+            if history.empty:
+                print("⚠️ No price history available")
+                time.sleep(10)
+                continue
+
+            close = history['Close']
+            price = close.iloc[-1]
+            timestamp = datetime.now().strftime("%H:%M:%S")
+            price_history.append({"time": timestamp, "price": price})
+
+            # === MACD ===
+            ema_12 = close.ewm(span=12, adjust=False).mean()
+            ema_26 = close.ewm(span=26, adjust=False).mean()
+            macd = ema_12 - ema_26
+            signal = macd.ewm(span=9, adjust=False).mean()
+
+            latest_macd = macd.iloc[-1]
+            previous_macd = macd.iloc[-2]
+            latest_signal = signal.iloc[-1]
+            previous_signal = signal.iloc[-2]
+
+            # === RSI ===
+            delta = close.diff()
+            gain = delta.where(delta > 0, 0)
+            loss = -delta.where(delta < 0, 0)
+            avg_gain = gain.rolling(window=14).mean()
+            avg_loss = loss.rolling(window=14).mean()
+            rs = avg_gain / avg_loss
+            rsi = 100 - (100 / (1 + rs))
+            latest_rsi = rsi.iloc[-1]
+
+            print(f"🧠 RSI: {latest_rsi:.2f} | MACD: {latest_macd:.4f} | Signal: {latest_signal:.4f}")
+
+            # === Combined Logic ===
+            if (
+                previous_macd < previous_signal and latest_macd > latest_signal
+                and latest_rsi < 30 and wallet["usd"] > 0
+            ):
+                btc_bought = wallet["usd"] / price
+                wallet["btc"] += btc_bought
+                wallet["usd"] = 0
+                trade_log.append({
+                    "time": timestamp,
+                    "action": "BUY",
+                    "price": price,
+                    "amount": btc_bought,
+                    "wallet": wallet.copy(),
+                    "macd": round(latest_macd, 4),
+                    "rsi": round(latest_rsi, 2)
+                })
+                print(f"🟢 BUY at ${price:.2f} | BTC: {btc_bought:.6f}")
+
+            elif (
+                previous_macd > previous_signal and latest_macd < latest_signal
+                and latest_rsi > 70 and wallet["btc"] > 0
+            ):
+                usd_gained = wallet["btc"] * price
+                wallet["usd"] += usd_gained
+                wallet["btc"] = 0
+                trade_log.append({
+                    "time": timestamp,
+                    "action": "SELL",
+                    "price": price,
+                    "amount": usd_gained,
+                    "wallet": wallet.copy(),
+                    "macd": round(latest_macd, 4),
+                    "rsi": round(latest_rsi, 2)
+                })
+                print(f"🔴 SELL at ${price:.2f} | USD: {usd_gained:.2f}")
+            else:
+                print("⏳ HOLD - waiting for stronger signal")
+
+        except Exception as e:
+            print(f"⚠️ Strategy error: {e}")
+
+        time.sleep(10)
+
+# === Control Endpoints ===
+@app.post("/strategy/start")
+def start_bot():
+    global bot_active
+    if bot_active:
+        return {"status": "already running"}
+    bot_active = True
+    thread = threading.Thread(target=strategy_loop, daemon=True)
+    thread.start()
+    return {"status": "bot started"}
+
+@app.post("/strategy/stop")
+def stop_bot():
+    global bot_active
+    bot_active = False
+    return {"status": "bot stopped"}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="127.0.0.1", port=8000)

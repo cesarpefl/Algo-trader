@@ -1,0 +1,3089 @@
+INFO:     Will watch for changes in these directories: ['/home/skelligato/algo-trader']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [2010] using StatReload
+INFO:     Started server process [2019]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:50860 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50886 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50860 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50886 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50860 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50886 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50852 - "GET /price-history/BTC-USD?period=1d&interval=5m HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /price-history/BTC-USD?period=1d&interval=5m HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50852 - "GET /indicators/BTC-USD?period=1d&interval=5m HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /indicators/BTC-USD?period=1d&interval=5m HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50852 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50852 - "GET /price-history/ETH-USD?period=1d&interval=5m HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /indicators/ETH-USD?period=1d&interval=5m HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50852 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50852 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50852 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50852 - "GET /price-history/ETH-USD?period=7d&interval=1h HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /indicators/ETH-USD?period=7d&interval=1h HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50852 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50852 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50852 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50852 - "GET /price-history/ETH-USD?period=1mo&interval=1d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /indicators/ETH-USD?period=1mo&interval=1d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50852 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50852 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58470 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58470 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58470 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58470 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58470 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58470 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58470 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58470 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58470 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58470 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58470 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58470 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42228 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42228 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42228 - "GET /logs HTTP/1.1" 200 OK
+🤖 Bot started thinking...
+INFO:     127.0.0.1:42228 - "POST /strategy/start HTTP/1.1" 200 OK
+🧠 RSI: 54.74 | MACD: -141.6442 | Signal: -153.8977
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:42228 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42228 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42228 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.74 | MACD: -141.6442 | Signal: -153.8977
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58126 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36068 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36068 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36068 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /price-history/BTC-USD?period=1mo&interval=1d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /indicators/BTC-USD?period=1mo&interval=1d HTTP/1.1" 200 OK
+🧠 RSI: 54.74 | MACD: -141.6442 | Signal: -153.8977
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58126 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.74 | MACD: -141.6442 | Signal: -153.8977
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58126 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.74 | MACD: -141.6442 | Signal: -153.8977
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58126 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.49 | MACD: -142.6918 | Signal: -154.1072
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58126 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.49 | MACD: -142.6918 | Signal: -154.1072
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58126 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.49 | MACD: -142.6918 | Signal: -154.1072
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58126 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.49 | MACD: -142.6918 | Signal: -154.1072
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58126 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.49 | MACD: -142.6918 | Signal: -154.1072
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58126 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.49 | MACD: -142.6918 | Signal: -154.1072
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58126 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.97 | MACD: -140.7336 | Signal: -153.7156
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58126 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.97 | MACD: -140.7336 | Signal: -153.7156
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:51882 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.97 | MACD: -140.7336 | Signal: -153.7156
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:51882 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.97 | MACD: -140.7336 | Signal: -153.7156
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:51882 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.97 | MACD: -140.7336 | Signal: -153.7156
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:51882 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.97 | MACD: -140.7336 | Signal: -153.7156
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:51882 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.65 | MACD: -142.0050 | Signal: -153.9699
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:51882 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51882 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.65 | MACD: -142.0050 | Signal: -153.9699
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:46612 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.65 | MACD: -142.0050 | Signal: -153.9699
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:46612 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.65 | MACD: -142.0050 | Signal: -153.9699
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:46612 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.65 | MACD: -142.0050 | Signal: -153.9699
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:46612 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.65 | MACD: -142.0050 | Signal: -153.9699
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:46612 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.65 | MACD: -142.0050 | Signal: -153.9699
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:46612 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.65 | MACD: -142.0050 | Signal: -153.9699
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:46612 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.65 | MACD: -142.0050 | Signal: -153.9699
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:46612 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.65 | MACD: -142.0050 | Signal: -153.9699
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:46612 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.65 | MACD: -142.0050 | Signal: -153.9699
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:44258 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.65 | MACD: -142.0050 | Signal: -153.9699
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:44258 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.15 | MACD: -144.0990 | Signal: -154.3887
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:44258 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.15 | MACD: -144.0990 | Signal: -154.3887
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:44258 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.15 | MACD: -144.0990 | Signal: -154.3887
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:44258 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.15 | MACD: -144.0990 | Signal: -154.3887
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:56810 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.15 | MACD: -144.0990 | Signal: -154.3887
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:56810 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.15 | MACD: -144.0990 | Signal: -154.3887
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:56810 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 54.15 | MACD: -144.0990 | Signal: -154.3887
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:56810 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.11 | MACD: -148.5002 | Signal: -155.2689
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:56810 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.11 | MACD: -148.5002 | Signal: -155.2689
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:56810 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.11 | MACD: -148.5002 | Signal: -155.2689
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:56810 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.11 | MACD: -148.5002 | Signal: -155.2689
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:56810 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.11 | MACD: -148.5002 | Signal: -155.2689
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:56810 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.11 | MACD: -148.5002 | Signal: -155.2689
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:56810 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.07 | MACD: -148.6685 | Signal: -155.3026
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:56810 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.07 | MACD: -148.6685 | Signal: -155.3026
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:56810 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.07 | MACD: -148.6685 | Signal: -155.3026
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:34040 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.07 | MACD: -148.6685 | Signal: -155.3026
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:34040 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.77 | MACD: -145.6758 | Signal: -154.7040
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:34040 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.77 | MACD: -145.6758 | Signal: -154.7040
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:34040 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.77 | MACD: -145.6758 | Signal: -154.7040
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:34040 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.77 | MACD: -145.6758 | Signal: -154.7040
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:34040 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34040 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.77 | MACD: -145.6758 | Signal: -154.7040
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:36876 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.77 | MACD: -145.6758 | Signal: -154.7040
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:36876 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.65 | MACD: -146.1675 | Signal: -154.8024
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:36876 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.65 | MACD: -146.1675 | Signal: -154.8024
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:36876 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.65 | MACD: -146.1675 | Signal: -154.8024
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:36876 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36876 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.65 | MACD: -146.1675 | Signal: -154.8024
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58284 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58284 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58284 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58284 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58284 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58284 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.65 | MACD: -146.1675 | Signal: -154.8024
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58284 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58284 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58284 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58284 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58284 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58284 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.65 | MACD: -146.1675 | Signal: -154.8024
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58284 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58284 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58284 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58284 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58284 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58284 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.65 | MACD: -146.1675 | Signal: -154.8024
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58284 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58284 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58284 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58284 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58284 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58284 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.65 | MACD: -146.1675 | Signal: -154.8024
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58284 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58284 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58284 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58284 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58284 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58284 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.65 | MACD: -146.1675 | Signal: -154.8024
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:46118 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46118 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46118 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46118 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46118 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46118 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.65 | MACD: -146.1675 | Signal: -154.8024
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:46118 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46118 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46118 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46118 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46118 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46118 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 53.65 | MACD: -146.1675 | Signal: -154.8024
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:46118 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46118 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46118 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46118 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46118 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46118 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52476 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52476 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52476 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52476 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52476 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52476 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52476 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52408 - "GET /status HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=1d)
+INFO:     127.0.0.1:52476 - "GET /price-history/BTC-USD?period=1d&interval=5m HTTP/1.1" 400 Bad Request
+$BTC-USD: possibly delisted; no price data found  (period=1d)
+INFO:     127.0.0.1:52392 - "GET /price-history/BTC-USD?period=1d&interval=5m HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:52392 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52476 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52392 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52476 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:52476 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35828 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52476 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35828 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52476 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35828 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52408 - "GET /price-history/BTC-USD?period=1d&interval=5m HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52408 - "GET /indicators/BTC-USD?period=1d&interval=5m HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/middleware/cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/middleware/cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/fastapi/routing.py", line 338, in app
+    response = actual_response_class(content, **response_args)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/responses.py", line 182, in __init__
+    super().__init__(content, status_code, headers, media_type, background)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/responses.py", line 45, in __init__
+    self.body = self.render(content)
+                ~~~~~~~~~~~^^^^^^^^^
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/responses.py", line 185, in render
+    return json.dumps(
+           ~~~~~~~~~~^
+        content,
+        ^^^^^^^^
+    ...<3 lines>...
+        separators=(",", ":"),
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ).encode("utf-8")
+    ^
+  File "/usr/lib/python3.13/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "/usr/lib/python3.13/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.13/json/encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+ValueError: Out of range float values are not JSON compliant: np.float64(nan)
+INFO:     127.0.0.1:52392 - "GET /price-history/BTC-USD?period=1d&interval=5m HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52392 - "GET /indicators/BTC-USD?period=1d&interval=5m HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/middleware/cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/middleware/cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/fastapi/routing.py", line 338, in app
+    response = actual_response_class(content, **response_args)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/responses.py", line 182, in __init__
+    super().__init__(content, status_code, headers, media_type, background)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/responses.py", line 45, in __init__
+    self.body = self.render(content)
+                ~~~~~~~~~~~^^^^^^^^^
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/responses.py", line 185, in render
+    return json.dumps(
+           ~~~~~~~~~~^
+        content,
+        ^^^^^^^^
+    ...<3 lines>...
+        separators=(",", ":"),
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ).encode("utf-8")
+    ^
+  File "/usr/lib/python3.13/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "/usr/lib/python3.13/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.13/json/encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+ValueError: Out of range float values are not JSON compliant: np.float64(nan)
+INFO:     127.0.0.1:52476 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52476 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52476 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52476 - "GET /price-history/BTC-USD?period=7d&interval=1h HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52476 - "GET /indicators/BTC-USD?period=7d&interval=1h HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52476 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52476 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52476 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52476 - "GET /price-history/BTC-USD?period=1mo&interval=1d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52476 - "GET /indicators/BTC-USD?period=1mo&interval=1d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52476 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52476 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52476 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:59894 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:59894 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:59894 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:59894 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59894 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /price-history/BTC-USD?period=7d&interval=1h HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /indicators/BTC-USD?period=7d&interval=1h HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /price-history/BTC-USD?period=1mo&interval=1d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /indicators/BTC-USD?period=1mo&interval=1d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /price-history/BTC-USD?period=1d&interval=5m HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42192 - "GET /indicators/BTC-USD?period=1d&interval=5m HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/middleware/cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/middleware/cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/fastapi/routing.py", line 338, in app
+    response = actual_response_class(content, **response_args)
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/responses.py", line 182, in __init__
+    super().__init__(content, status_code, headers, media_type, background)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/responses.py", line 45, in __init__
+    self.body = self.render(content)
+                ~~~~~~~~~~~^^^^^^^^^
+  File "/home/skelligato/algo-trader/algo-env/lib/python3.13/site-packages/starlette/responses.py", line 185, in render
+    return json.dumps(
+           ~~~~~~~~~~^
+        content,
+        ^^^^^^^^
+    ...<3 lines>...
+        separators=(",", ":"),
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ).encode("utf-8")
+    ^
+  File "/usr/lib/python3.13/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "/usr/lib/python3.13/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.13/json/encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+ValueError: Out of range float values are not JSON compliant: np.float64(nan)
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:43358 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:43358 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:43358 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:43358 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43358 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:59676 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:59676 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:59676 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:59676 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:59676 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:59676 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.40 | MACD: 280.1137 | Signal: 261.5363
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.40 | MACD: 280.1137 | Signal: 261.5363
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.40 | MACD: 280.1137 | Signal: 261.5363
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.40 | MACD: 280.1137 | Signal: 261.5363
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.40 | MACD: 280.1137 | Signal: 261.5363
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.40 | MACD: 280.1137 | Signal: 261.5363
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.05 | MACD: 277.7449 | Signal: 261.0625
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.05 | MACD: 277.7449 | Signal: 261.0625
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.05 | MACD: 277.7449 | Signal: 261.0625
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.05 | MACD: 277.7449 | Signal: 261.0625
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.05 | MACD: 277.7449 | Signal: 261.0625
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.05 | MACD: 277.7449 | Signal: 261.0625
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.70 | MACD: 282.1292 | Signal: 261.9394
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.70 | MACD: 282.1292 | Signal: 261.9394
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.70 | MACD: 282.1292 | Signal: 261.9394
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.70 | MACD: 282.1292 | Signal: 261.9394
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.70 | MACD: 282.1292 | Signal: 261.9394
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.70 | MACD: 282.1292 | Signal: 261.9394
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.70 | MACD: 282.1292 | Signal: 261.9394
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.62 | MACD: 281.5939 | Signal: 261.8323
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:39160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39160 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58820 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58820 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58820 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.62 | MACD: 281.5939 | Signal: 261.8323
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.62 | MACD: 281.5939 | Signal: 261.8323
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.62 | MACD: 281.5939 | Signal: 261.8323
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.62 | MACD: 281.5939 | Signal: 261.8323
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.62 | MACD: 281.5939 | Signal: 261.8323
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.58 | MACD: 281.3009 | Signal: 261.7737
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.58 | MACD: 281.3009 | Signal: 261.7737
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.58 | MACD: 281.3009 | Signal: 261.7737
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.58 | MACD: 281.3009 | Signal: 261.7737
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.58 | MACD: 281.3009 | Signal: 261.7737
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.56 | MACD: 281.1526 | Signal: 261.7441
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.56 | MACD: 281.1526 | Signal: 261.7441
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.56 | MACD: 281.1526 | Signal: 261.7441
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.56 | MACD: 281.1526 | Signal: 261.7441
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.56 | MACD: 281.1526 | Signal: 261.7441
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.56 | MACD: 281.1526 | Signal: 261.7441
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.88 | MACD: 283.4137 | Signal: 262.1963
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.88 | MACD: 283.4137 | Signal: 262.1963
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.88 | MACD: 283.4137 | Signal: 262.1963
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.88 | MACD: 283.4137 | Signal: 262.1963
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.88 | MACD: 283.4137 | Signal: 262.1963
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+🧠 RSI: 59.88 | MACD: 283.4137 | Signal: 262.1963
+⏳ HOLD - waiting for stronger signal
+INFO:     127.0.0.1:58822 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:50326 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:50326 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50326 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:51434 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:51434 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:51434 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:51434 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:51434 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:51434 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51434 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34024 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34024 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34024 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39192 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39192 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39192 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:39208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:39208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:39208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:39208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:39208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:39208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39208 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:44538 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44538 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44538 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44538 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44538 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44538 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44538 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44538 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44538 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44538 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44538 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44538 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:44538 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44538 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44538 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44538 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44538 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44538 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44538 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44538 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44538 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44538 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44538 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44538 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47208 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55602 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55602 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55602 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:55602 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55602 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55602 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55602 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55602 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55602 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55602 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55602 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55602 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55602 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55602 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55602 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:55602 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55602 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55602 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59570 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59570 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59570 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59578 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59578 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59578 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59578 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59578 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59578 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:59578 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59578 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59578 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59578 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59578 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59578 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:46962 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:46962 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:46962 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:46962 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:46962 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:46962 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46962 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:41634 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:41634 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:41634 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41634 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:42750 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:42750 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:42750 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:42750 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:42750 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:42750 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:42750 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42750 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:46002 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:46002 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:46002 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:46002 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:46002 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:46002 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46002 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:38102 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:38102 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:38102 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38102 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:60734 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:60734 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:60734 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:60734 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60734 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:51196 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:51196 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:51196 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51196 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:54748 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:54748 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:54748 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54748 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:43008 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43008 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43008 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50738 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50738 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50738 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:57188 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:57188 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:57188 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:57188 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:57188 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57188 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+$BTC-USD: possibly delisted; no price data found  (period=7d)
+⚠️ No price history available
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /balance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52516 - "GET /logs HTTP/1.1" 200 OK
